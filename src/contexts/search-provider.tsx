@@ -36,7 +36,7 @@ export const SearchProvider: React.FC = ({ children }): JSX.Element => {
       setLoading(true);
       try {
         const { data } = await axios.get<IGitSearchData>(
-          `https://api.github.com/search/users?q=${search}&per_page=10`,
+          `https://api.github.com/search/users?q=${search}&per_page=15`,
         );
 
         setResults(data.items);

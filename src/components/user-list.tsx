@@ -13,7 +13,6 @@ import { UserItem } from './user-item';
 export const UserList = (): JSX.Element => {
   const { results, loading } = useSearch();
 
-  console.log(results);
   return (
     <Center p={6}>
       <VStack spacing={6} w="100%" maxW="container.xl">
